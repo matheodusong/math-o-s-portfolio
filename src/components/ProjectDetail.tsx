@@ -51,12 +51,25 @@ const ProjectDetail = ({ project, isOpen, onClose }: ProjectDetailProps) => {
       />
       <article className="max-w-[95vw] mx-auto pt-20 md:pt-24 px-4 h-[calc(100vh-6rem)] flex flex-col">
         <div className="flex flex-col lg:grid lg:grid-cols-12 gap-4 lg:gap-8 flex-1 min-h-0">
-          {/* Images */}
-          <div className="lg:col-span-9 flex items-center justify-center gap-3 min-h-0 h-full">
+          {/* Sidebar */}
+          <aside className="lg:col-span-3 self-start order-2 lg:order-none">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-light tracking-tighter uppercase mb-6 leading-none text-foreground">
+              {project.title}
+            </h1>
+            <div className="border-b border-border mb-8 lg:mb-12" />
+            <div className="text-secondary-foreground text-sm leading-relaxed">
+              <p>{project.objective}</p>
+              <div className="border-b border-border my-6" />
+              <p>{project.materiality}</p>
+            </div>
+          </aside>
+
+          {/* Images — aligned to start at the separator line */}
+          <div className="lg:col-span-9 flex items-start justify-center gap-3 min-h-0 h-full order-1 lg:order-none">
             {images.map((img, i) => (
               <figure
                 key={i}
-                className="h-full min-w-0 flex items-center cursor-zoom-in shrink"
+                className="h-full min-w-0 flex items-start cursor-zoom-in shrink"
                 onClick={() => setLightboxIndex(i)}
               >
                 <img
@@ -69,19 +82,6 @@ const ProjectDetail = ({ project, isOpen, onClose }: ProjectDetailProps) => {
               </figure>
             ))}
           </div>
-
-          {/* Sidebar */}
-          <aside className="lg:col-span-3 self-start">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-light tracking-tighter uppercase mb-6 leading-none text-foreground">
-              {project.title}
-            </h1>
-            <div className="mb-8 lg:mb-12 border-b border-border pb-6" />
-            <div className="text-secondary-foreground text-sm leading-relaxed">
-              <p>{project.objective}</p>
-              <div className="border-b border-border my-6" />
-              <p>{project.materiality}</p>
-            </div>
-          </aside>
         </div>
       </article>
 
