@@ -52,17 +52,17 @@ const ProjectDetail = ({ project, isOpen, onClose }: ProjectDetailProps) => {
       <article className="max-w-[95vw] mx-auto pt-20 md:pt-24 px-4 h-[calc(100vh-6rem)] flex flex-col">
         <div className="flex flex-col lg:grid lg:grid-cols-12 gap-4 lg:gap-8 flex-1 min-h-0">
           {/* Images */}
-          <div className="lg:col-span-9 flex gap-3 min-h-0 h-full">
+          <div className="lg:col-span-9 flex items-center justify-center gap-3 min-h-0 h-full">
             {images.map((img, i) => (
               <figure
                 key={i}
-                className="flex-1 min-w-0 flex items-center cursor-zoom-in"
+                className="h-full min-w-0 flex items-center cursor-zoom-in shrink"
                 onClick={() => setLightboxIndex(i)}
               >
                 <img
                   src={img.src}
                   alt={img.alt}
-                  className="w-full h-full object-contain transition-all duration-500 hover:scale-[1.02]"
+                  className="max-h-full w-auto object-contain transition-all duration-500 hover:scale-[1.02]"
                   loading="eager"
                   decoding="async"
                 />
