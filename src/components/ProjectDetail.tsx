@@ -76,15 +76,10 @@ const ProjectDetail = ({ project, isOpen, onClose }: ProjectDetailProps) => {
               {project.title}
             </h1>
             <div className="mb-8 lg:mb-12 border-b border-border pb-6" />
-            <div className="space-y-8 lg:space-y-12 text-secondary-foreground text-sm leading-relaxed">
-              <section>
-                <h2 className="spec-label mb-2">Objective</h2>
-                <p>{project.objective}</p>
-              </section>
-              <section>
-                <h2 className="spec-label mb-2">Materiality</h2>
-                <p>{project.materiality}</p>
-              </section>
+            <div className="text-secondary-foreground text-sm leading-relaxed">
+              <p>{project.objective}</p>
+              <div className="border-b border-border my-6" />
+              <p>{project.materiality}</p>
             </div>
           </aside>
         </div>
