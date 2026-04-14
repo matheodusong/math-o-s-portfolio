@@ -52,7 +52,7 @@ const ProjectDetail = ({ project, isOpen, onClose }: ProjectDetailProps) => {
       <article className="max-w-[95vw] mx-auto pt-20 md:pt-24 px-4 h-[calc(100vh-6rem)] flex flex-col">
         <div className="flex flex-col lg:grid lg:grid-cols-12 gap-4 lg:gap-8 flex-1 min-h-0">
           {/* Images */}
-          <div className="lg:col-span-9 flex items-center justify-center gap-3 min-h-0 h-full">
+          <div className="lg:col-span-9 flex items-start justify-center gap-3 min-h-0 h-full pt-[calc(3rem+1.5rem+1.5rem+1px)]">
             {images.map((img, i) => (
               <figure
                 key={i}
