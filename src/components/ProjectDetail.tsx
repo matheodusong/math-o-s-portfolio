@@ -75,11 +75,9 @@ const ProjectDetail = ({ project, isOpen, onClose }: ProjectDetailProps) => {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-light tracking-tighter uppercase leading-none text-foreground">
               {project.title}
             </h1>
-            <div className="border-b border-border my-6" />
-            <div className="text-secondary-foreground text-sm leading-relaxed">
-              <p>{project.objective}</p>
-              <div className="border-b border-border my-6" />
-              <p>{project.materiality}</p>
+            <div className="text-secondary-foreground text-sm leading-relaxed space-y-2">
+              <p>— {project.objective}</p>
+              <p>— {project.materiality}</p>
             </div>
           </aside>
         </div>
