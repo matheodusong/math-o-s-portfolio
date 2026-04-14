@@ -71,11 +71,11 @@ const ProjectDetail = ({ project, isOpen, onClose }: ProjectDetailProps) => {
           </div>
 
           {/* Sidebar */}
-          <aside className="lg:col-span-3 self-start">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-light tracking-tighter uppercase mb-6 leading-none text-foreground">
+          <aside className="lg:col-span-3 flex flex-col justify-center h-full">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-light tracking-tighter uppercase leading-none text-foreground">
               {project.title}
             </h1>
-            <div className="mb-8 lg:mb-12 border-b border-border pb-6" />
+            <div className="border-b border-border my-6" />
             <div className="text-secondary-foreground text-sm leading-relaxed">
               <p>{project.objective}</p>
               <div className="border-b border-border my-6" />
