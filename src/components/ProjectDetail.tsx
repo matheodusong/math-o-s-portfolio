@@ -49,20 +49,20 @@ const ProjectDetail = ({ project, isOpen, onClose }: ProjectDetailProps) => {
         type="article"
         image={images[0].src}
       />
-      <article className="max-w-[95vw] mx-auto pt-20 md:pt-24 px-4 h-[calc(100vh-6rem)] flex flex-col">
-        <div className="flex flex-col lg:grid lg:grid-cols-12 gap-4 lg:gap-8 flex-1 min-h-0">
+      <article className="max-w-[95vw] mx-auto pt-20 md:pt-24 px-4 lg:h-[calc(100vh-6rem)] flex flex-col">
+        <div className="flex flex-col lg:grid lg:grid-cols-12 gap-6 lg:gap-8 flex-1 min-h-0">
           {/* Images */}
-          <div className="lg:col-span-9 flex items-center justify-center gap-3 min-h-0 h-full">
+          <div className="lg:col-span-9 flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-3 min-h-0 lg:h-full">
             {images.map((img, i) => (
               <figure
                 key={i}
-                className="h-full min-w-0 flex items-center cursor-zoom-in shrink"
+                className="w-full lg:w-auto lg:h-full min-w-0 flex items-center justify-center cursor-zoom-in shrink"
                 onClick={() => setLightboxIndex(i)}
               >
                 <img
                   src={img.src}
                   alt={img.alt}
-                  className="max-h-full w-auto object-contain transition-all duration-500 hover:scale-[1.02]"
+                  className="w-full lg:w-auto lg:max-h-full lg:h-auto object-contain transition-all duration-500 hover:scale-[1.02]"
                   loading="eager"
                   decoding="async"
                 />
@@ -71,7 +71,7 @@ const ProjectDetail = ({ project, isOpen, onClose }: ProjectDetailProps) => {
           </div>
 
           {/* Sidebar */}
-          <aside className="lg:col-span-3 flex flex-col justify-start h-full py-[190px]">
+          <aside className="lg:col-span-3 flex flex-col justify-start lg:h-full py-8 lg:py-[190px]">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-light tracking-tighter uppercase leading-none text-foreground">
               {project.title}
             </h1>
