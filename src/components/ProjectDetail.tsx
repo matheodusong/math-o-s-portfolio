@@ -76,7 +76,7 @@ const ProjectDetail = ({ project, isOpen, onClose }: ProjectDetailProps) => {
               {project.title}
             </h1>
             <div className="text-secondary-foreground text-sm leading-relaxed space-y-6 mt-6">
-              <p>— {project.objective}</p>
+              <p className="my-[20px]">— {project.objective}</p>
               <p>— {project.materiality}</p>
             </div>
           </aside>
