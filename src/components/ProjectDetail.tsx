@@ -71,7 +71,7 @@ const ProjectDetail = ({ project, isOpen, onClose }: ProjectDetailProps) => {
           </div>
 
           {/* Sidebar */}
-          <aside className="lg:col-span-3 flex flex-col justify-start h-full">
+          <aside className="lg:col-span-3 flex flex-col justify-start h-full py-[250px]">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-light tracking-tighter uppercase leading-none text-foreground">
               {project.title}
             </h1>
