@@ -71,12 +71,12 @@ const ProjectDetail = ({ project, isOpen, onClose }: ProjectDetailProps) => {
           </div>
 
           {/* Sidebar */}
-          <aside className="lg:col-span-3 flex flex-col justify-start h-full py-[250px]">
+          <aside className="lg:col-span-3 flex flex-col justify-start h-full py-[190px]">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-light tracking-tighter uppercase leading-none text-foreground">
               {project.title}
             </h1>
             <div className="text-secondary-foreground text-sm leading-relaxed space-y-6 mt-6">
-              <p className="my-[20px]">— {project.objective}</p>
+              <p className="my-[10px]">— {project.objective}</p>
               <p>— {project.materiality}</p>
             </div>
           </aside>
