@@ -11,7 +11,6 @@ const PortfolioHeader = ({ onOpenInfo, onOpenInquiries, onLogoClick }: Portfolio
         <span className="block text-[10px] md:text-xs tracking-[0.3em] font-medium uppercase text-foreground">
           Matheo Dusong
         </span>
-        <span className="block text-[9px] text-muted-foreground uppercase mt-1">Industrial Designer</span>
       </div>
       <nav className="pointer-events-auto flex gap-6 md:gap-8">
         <button onClick={onOpenInquiries} className="nav-link">Inquiries</button>

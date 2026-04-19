@@ -58,11 +58,9 @@ export const projects: ProjectData[] = [
     number: 4,
     title: "Zéphyr",
     subtitle: "Aerodynamic Study",
-    description:
-      " Zéphyr is a fan. The stainless steel structure unfolds smoothly and creates a light breeze with a simple motion. Whether you're on the move or just need a quick way to cool down, Zéphyr is a good companion for warm days.",
-    objective:
-      "Zéphyr is a fan. The stainless steel structure unfolds smoothly and creates a light breeze with a simple motion. Whether you're on the move or just need a quick way to cool down, Zéphyr is a good companion for warm days.",
-    materiality: "Stainless steel and PVC-coated ripstop.",
+    description: "Metalic fan made for warm days.",
+    objective: "Metalic fan made for warm days.",
+    materiality: "Stainless steel and pvc coated ripstop.",
     imageFolder: "zephyr",
     imageCount: 2,
   },
