@@ -75,7 +75,7 @@ const ProjectDetail = ({ project, isOpen, onClose }: ProjectDetailProps) => {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-light tracking-tighter uppercase leading-none text-foreground">
               {project.title}
             </h1>
-            <div className="text-secondary-foreground text-sm leading-relaxed space-y-2">
+            <div className="text-secondary-foreground text-sm leading-relaxed space-y-6 mt-6">
               <p>— {project.objective}</p>
               <p>— {project.materiality}</p>
             </div>
