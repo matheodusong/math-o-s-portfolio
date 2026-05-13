@@ -11,7 +11,7 @@ interface SEOHeadProps {
 const SITE_URL = "https://matheo.dusong.ch";
 const DEFAULT_TITLE = "Matheo Dusong | Industrial Design Portfolio";
 const DEFAULT_DESCRIPTION =
-  "Découvrez les projets de Matheo Dusong, designer industriel suisse — crayons, foils, bijoux et objets techniques.";
+  "Portfolio of Matheo Dusong, Swiss industrial designer — pencils, foils, jewellery and technical objects.";
 
 const SEOHead = ({
   title,
