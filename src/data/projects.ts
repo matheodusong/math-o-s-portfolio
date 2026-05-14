@@ -101,11 +101,11 @@ export const projects: ProjectData[] = [
     title: "PN",
     subtitle: "Recherche visuelle",
     description:
-      "Une recherche visuelle développée autour d’un concept de pots de crème imaginé pour un client. La série explore matière, lumière et proportions afin de tester l’existence de l’objet avant même tout prototype physique, en construisant un langage visuel cohérent autour du produit.",
+      "Client privé.",
     objective:
-      "Une recherche visuelle développée autour d’un concept de pots de crème imaginé pour un client. La série explore matière, lumière et proportions afin de tester l’existence de l’objet avant même tout prototype physique, en construisant un langage visuel cohérent autour du produit.",
+      "Client privé.",
     materiality:
-      "CGI modélisé avec Rhino et rendu sur Blender sans utilisation d’intelligence artificielle. Projet personnel, 2025.",
+      "CGI modélisé avec Rhino et rendu sur Blender. 2025.",
     imageFolder: "PN",
   },
   {
@@ -114,9 +114,9 @@ export const projects: ProjectData[] = [
     title: "JB",
     subtitle: "Visuels pour un client",
     description:
-      "Une sélection d’images CGI produites pour un client. La première a été conçue comme affiche pour un événement DJ set, traitant l’image comme une composition graphique affirmée. La seconde a été pensée pour une impression textile, générant un motif répétitif destiné à être découpé puis assemblé en vêtements.",
+      "Client privé.",
     objective:
-      "Une sélection d’images CGI produites pour un client. La première a été conçue comme affiche pour un événement DJ set, traitant l’image comme une composition graphique affirmée. La seconde a été pensée pour une impression textile, générant un motif répétitif destiné à être découpé puis assemblé en vêtements.",
+      "Client privé.",
     materiality:
       "CGI modélisé sur Rhino et rendu sur Blender. 2025-2026.",
     imageFolder: "JB",
