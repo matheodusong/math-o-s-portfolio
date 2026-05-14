@@ -18,7 +18,7 @@ export const getProjectImage = (folder: string, index: number) =>
   `/images/${folder}/image-${index}.webp`;
 
 export const projects: ProjectData[] = [
-  {
+    {
     slug: "alumine",
     number: 1,
     title: "Alumine",
@@ -117,6 +117,7 @@ export const projects: ProjectData[] = [
     imageFolder: "JB",
     imageCount: 2,
   },
+];
 ];
 
 export const getProjectBySlug = (slug: string): ProjectData | undefined =>
