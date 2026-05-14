@@ -24,10 +24,10 @@ export const projects: ProjectData[] = [
     title: "Alumine",
     subtitle: "Mechanical pencils",
     description:
-      "A collection of mechanical pencils that share the same base pattern, but their thickness evolves in relation to the lead's diameter.",
+      "A series of mechanical pencils developed as a material study, exploring how a single object can behave like a color chart. The pattern repeating along each barrel thickens progressively in relation to the lead diameter housed inside, turning a functional detail into a visible code.",
     objective:
-      "A collection of mechanical pencils that share the same base pattern, but their thickness evolves in relation to the lead's diameter.",
-    materiality: "3D printed Aluminium.",
+      "A series of mechanical pencils developed as a material study, exploring how a single object can behave like a color chart. The pattern repeating along each barrel thickens progressively in relation to the lead diameter housed inside, turning a functional detail into a visible code.",
+    materiality: "3D printed Aluminium. School project, ECAL, 2024.",
     imageFolder: "alumine",
   },
   {
