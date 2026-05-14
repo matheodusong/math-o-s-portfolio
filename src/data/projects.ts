@@ -18,52 +18,54 @@ export const getProjectImage = (folder: string, index: number) =>
   `/images/${folder}/image-${index}.webp`;
 
 export const projects: ProjectData[] = [
-    {
+  {
     slug: "alumine",
     number: 1,
     title: "Alumine",
-    subtitle: "Mechanical pencils",
+    subtitle: "Porte-mines",
     description:
-      "A series of mechanical pencils developed as a material study, exploring how a single object can behave like a color chart. The pattern repeating along each barrel thickens progressively in relation to the lead diameter housed inside, turning a functional detail into a visible code.",
+      "Une série de porte-mines développée comme étude de matière, explorant la manière dont un objet peut fonctionner comme un nuancier. Le motif répété le long de chaque corps s’épaissit progressivement selon le diamètre de la mine qu’il contient, transformant un détail fonctionnel en code visuel.",
     objective:
-      "A series of mechanical pencils developed as a material study, exploring how a single object can behave like a color chart. The pattern repeating along each barrel thickens progressively in relation to the lead diameter housed inside, turning a functional detail into a visible code.",
-    materiality: "3D printed Aluminium. School project, ECAL, 2024.",
+      "Une série de porte-mines développée comme étude de matière, explorant la manière dont un objet peut fonctionner comme un nuancier. Le motif répété le long de chaque corps s’épaissit progressivement selon le diamètre de la mine qu’il contient, transformant un détail fonctionnel en code visuel.",
+    materiality: "Aluminium imprimé en 3D. Projet scolaire, ECAL, 2024.",
     imageFolder: "alumine",
   },
   {
     slug: "rpr",
     number: 2,
     title: "RPR",
-    subtitle: "CNC Fabrication",
+    subtitle: "Fabrication CNC",
     description:
-      "A repairable external SSD built around a standard M.2 drive. The shell is 3D printed in aluminium for its heat-dissipation properties, held together by a soft plastic bumper that wraps the body like a phone case. Once opened, the M.2 drive can be swapped without any tools, extending the object's lifespan beyond a fixed storage capacity.",
+      "Un SSD externe réparable conçu autour d’un disque M.2 standard. La coque, imprimée en aluminium pour ses propriétés de dissipation thermique, est maintenue par un bumper souple enveloppant l’objet comme une coque de téléphone. Une fois ouvert, le disque M.2 peut être remplacé sans outils, prolongeant la durée de vie de l’objet au-delà d’une capacité de stockage fixe.",
     objective:
-      "A repairable external SSD built around a standard M.2 drive. The shell is 3D printed in aluminium for its heat-dissipation properties, held together by a soft plastic bumper that wraps the body like a phone case. Once opened, the M.2 drive can be swapped without any tools, extending the object's lifespan beyond a fixed storage capacity.",
-    materiality: "3D printed aluminium and soft plastic bumper. School project, ECAL, 2025.",
+      "Un SSD externe réparable conçu autour d’un disque M.2 standard. La coque, imprimée en aluminium pour ses propriétés de dissipation thermique, est maintenue par un bumper souple enveloppant l’objet comme une coque de téléphone. Une fois ouvert, le disque M.2 peut être remplacé sans outils, prolongeant la durée de vie de l’objet au-delà d’une capacité de stockage fixe.",
+    materiality:
+      "Aluminium imprimé en 3D et bumper en plastique souple. Projet scolaire, ECAL, 2025.",
     imageFolder: "rpr",
   },
   {
     slug: "mille-foil",
     number: 3,
     title: "Mille-foil",
-    subtitle: "Structure Design",
+    subtitle: "Design structurel",
     description:
-      "Designed to suit a wide range of users, Mille-foil addresses this issue with its modular volume system. A single board is all you need, where several would normally be required. It's suitable for both beginners and experienced riders, adapting to each individual's progress. Easy to transport and quick to assemble, just a few screws are all you need to be ready to sail.",
+      "Pensé pour s’adapter à une large variété d’utilisateurs, Mille-foil répond à cette problématique grâce à un système modulaire de volume. Une seule planche suffit là où plusieurs seraient normalement nécessaires. Adaptée aussi bien aux débutants qu’aux riders expérimentés, elle accompagne l’évolution de chacun. Facile à transporter et rapide à assembler, quelques vis suffisent pour être prêt à naviguer.",
     objective:
-      "Designed to suit a wide range of users, Mille-foil addresses this issue with its modular volume system. A single board is all you need, where several would normally be required. It's suitable for both beginners and experienced riders, adapting to each individual's progress. Easy to transport and quick to assemble, just a few screws are all you need to be ready to sail.",
-    materiality: "Carbon and fiber glass.",
+      "Pensé pour s’adapter à une large variété d’utilisateurs, Mille-foil répond à cette problématique grâce à un système modulaire de volume. Une seule planche suffit là où plusieurs seraient normalement nécessaires. Adaptée aussi bien aux débutants qu’aux riders expérimentés, elle accompagne l’évolution de chacun. Facile à transporter et rapide à assembler, quelques vis suffisent pour être prêt à naviguer.",
+    materiality: "Carbone et fibre de verre.",
     imageFolder: "mille-foil",
   },
   {
     slug: "zephyr",
     number: 4,
     title: "Zéphyr",
-    subtitle: "Aerodynamic Study",
+    subtitle: "Étude aérodynamique",
     description:
-      "Éventail métallique pensé comme une relecture contemporaine d'un objet vieux de plusieurs siècles, conçu pour les chaudes journées d'été. La structure en acier inoxydable découpée au laser soutient une toile en ripstop enduit de PVC, assemblée par soudure thermique pour se passer de couture.",
+      "Un éventail métallique conçu comme une réinterprétation contemporaine d’un objet vieux de plusieurs siècles, pensé pour les journées d’été les plus chaudes. La structure en acier inoxydable découpée au laser soutient une toile en ripstop enduit de PVC, assemblée par soudure thermique afin d’éviter toute couture.",
     objective:
-      "Éventail métallique pensé comme une relecture contemporaine d'un objet vieux de plusieurs siècles, conçu pour les chaudes journées d'été. La structure en acier inoxydable découpée au laser soutient une toile en ripstop enduit de PVC, assemblée par soudure thermique pour se passer de couture.",
-    materiality: "Acier inoxydable découpé au laser et ripstop enduit PVC. ECAL, 2024.",
+      "Un éventail métallique conçu comme une réinterprétation contemporaine d’un objet vieux de plusieurs siècles, pensé pour les journées d’été les plus chaudes. La structure en acier inoxydable découpée au laser soutient une toile en ripstop enduit de PVC, assemblée par soudure thermique afin d’éviter toute couture.",
+    materiality:
+      "Acier inoxydable découpé au laser et ripstop enduit PVC. ECAL, 2024.",
     imageFolder: "zephyr",
     imageCount: 2,
   },
@@ -71,54 +73,57 @@ export const projects: ProjectData[] = [
     slug: "peony",
     number: 5,
     title: "Peony",
-    subtitle: "Organic Form",
+    subtitle: "Forme organique",
     description:
-      "A bud vase developed during a workshop at ECAL led by Philippe Malouin, with the brief of designing a single-stem holder. Conceived as a group project with Arthur Németh and Jonas Meynet, the piece was hand-blown by glass artisans collaborating with the workshop, translating a quick design intention into a precise craft object.",
+      "Un vase soliflore développé lors d’un workshop à l’ECAL dirigé par Philippe Malouin, autour du brief consistant à concevoir un support pour une seule tige. Réalisé en groupe avec Arthur Németh et Jonas Meynet, l’objet a été soufflé à la main par des artisans verriers collaborateurs du workshop, traduisant une intention rapide en un objet de précision.",
     objective:
-      "A bud vase developed during a workshop at ECAL led by Philippe Malouin, with the brief of designing a single-stem holder. Conceived as a group project with Arthur Németh and Jonas Meynet, the piece was hand-blown by glass artisans collaborating with the workshop, translating a quick design intention into a precise craft object.",
+      "Un vase soliflore développé lors d’un workshop à l’ECAL dirigé par Philippe Malouin, autour du brief consistant à concevoir un support pour une seule tige. Réalisé en groupe avec Arthur Németh et Jonas Meynet, l’objet a été soufflé à la main par des artisans verriers collaborateurs du workshop, traduisant une intention rapide en un objet de précision.",
     materiality:
-      "Hand-blown glass. Workshop with Philippe Malouin, in collaboration with Arthur Németh and Jonas Meynet. ECAL, 2024. Images by Shiny Vallenas.",
+      "Verre soufflé à la main. Workshop avec Philippe Malouin, en collaboration avec Arthur Németh et Jonas Meynet. ECAL, 2024. Images par Shiny Vallenas.",
     imageFolder: "peony",
   },
   {
     slug: "Runway",
     number: 6,
     title: "Runway",
-    subtitle: "Jewellery collection",
+    subtitle: "Collection de bijoux",
     description:
-      "A jewellery collection of rings, bracelets and belt buckles created to accompany the garments of fashion designer Venus Z.E during her runway show. Each piece is 3D printed in 316L stainless steel, with several finished and polished by hand to bring out a contrast between raw sintered surfaces and mirror-bright facets.",
+      "Une collection de bijoux composée de bagues, bracelets et boucles de ceinture créée pour accompagner les silhouettes de la créatrice de mode Venus Z.E lors de son défilé. Chaque pièce est imprimée en 3D en acier inoxydable 316L, certaines étant ensuite polies à la main afin de révéler un contraste entre surfaces brutes frittées et facettes miroir.",
     objective:
-      "A jewellery collection of rings, bracelets and belt buckles created to accompany the garments of fashion designer Venus Z.E during her runway show. Each piece is 3D printed in 316L stainless steel, with several finished and polished by hand to bring out a contrast between raw sintered surfaces and mirror-bright facets.",
-    materiality: "3D printed 316L stainless steel, hand-polished. Personal project, 2026.",
+      "Une collection de bijoux composée de bagues, bracelets et boucles de ceinture créée pour accompagner les silhouettes de la créatrice de mode Venus Z.E lors de son défilé. Chaque pièce est imprimée en 3D en acier inoxydable 316L, certaines étant ensuite polies à la main afin de révéler un contraste entre surfaces brutes frittées et facettes miroir.",
+    materiality:
+      "Acier inoxydable 316L imprimé en 3D, poli à la main. Projet personnel, 2026.",
     imageFolder: "Runway",
   },
   {
     slug: "PN",
     number: 7,
     title: "PN",
-    subtitle: "Visual research",
+    subtitle: "Recherche visuelle",
     description:
-      "A visual research developed around a concept for a line of cream jars imagined for a client. The series explores material, light and proportion to test how the object could exist before any physical prototype, building a coherent visual language around the product.",
+      "Une recherche visuelle développée autour d’un concept de pots de crème imaginé pour un client. La série explore matière, lumière et proportions afin de tester l’existence de l’objet avant même tout prototype physique, en construisant un langage visuel cohérent autour du produit.",
     objective:
-      "A visual research developed around a concept for a line of cream jars imagined for a client. The series explores material, light and proportion to test how the object could exist before any physical prototype, building a coherent visual language around the product.",
-    materiality: "CGI, fully modelled and rendered in Blender without the use of artificial intelligence. Personal project, 2025.",
+      "Une recherche visuelle développée autour d’un concept de pots de crème imaginé pour un client. La série explore matière, lumière et proportions afin de tester l’existence de l’objet avant même tout prototype physique, en construisant un langage visuel cohérent autour du produit.",
+    materiality:
+      "CGI entièrement modélisé et rendu sur Blender sans utilisation d’intelligence artificielle. Projet personnel, 2025.",
     imageFolder: "PN",
   },
   {
     slug: "JB",
     number: 8,
     title: "JB",
-    subtitle: "Visuals for a client",
+    subtitle: "Visuels pour un client",
     description:
-      "A selection of CGI images produced for a client. The first image was designed as a poster for a DJ set event, treating the visual as a sharp graphic statement. The second was created to be printed on textile, generating a repeating motif intended to be cut and assembled into garments.",
+      "Une sélection d’images CGI produites pour un client. La première a été conçue comme affiche pour un événement DJ set, traitant l’image comme une composition graphique affirmée. La seconde a été pensée pour une impression textile, générant un motif répétitif destiné à être découpé puis assemblé en vêtements.",
     objective:
-      "A selection of CGI images produced for a client. The first image was designed as a poster for a DJ set event, treating the visual as a sharp graphic statement. The second was created to be printed on textile, generating a repeating motif intended to be cut and assembled into garments.",
-    materiality: "CGI, modelled and rendered in Blender. Poster image, 2026. Textile print image, 2025.",
+      "Une sélection d’images CGI produites pour un client. La première a été conçue comme affiche pour un événement DJ set, traitant l’image comme une composition graphique affirmée. La seconde a été pensée pour une impression textile, générant un motif répétitif destiné à être découpé puis assemblé en vêtements.",
+    materiality:
+      "CGI modélisé et rendu sur Blender. Image d’affiche, 2026. Image textile, 2025.",
     imageFolder: "JB",
     imageCount: 2,
   },
 ];
-];
 
-export const getProjectBySlug = (slug: string): ProjectData | undefined =>
-  projects.find((p) => p.slug === slug);
+export const getProjectBySlug = (
+  slug: string
+): ProjectData | undefined => projects.find((p) => p.slug === slug);
