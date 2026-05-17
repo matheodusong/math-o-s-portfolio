@@ -1,5 +1,6 @@
 import OverlayPage from "./OverlayPage";
 import SEOHead from "./SEOHead";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface InfoOverlayProps {
   isOpen: boolean;
@@ -7,6 +8,7 @@ interface InfoOverlayProps {
 }
 
 const InfoOverlay = ({ isOpen, onClose }: InfoOverlayProps) => {
+  const { t } = useLanguage();
   return (
     <OverlayPage isOpen={isOpen} onClose={onClose}>
       <SEOHead
@@ -15,10 +17,10 @@ const InfoOverlay = ({ isOpen, onClose }: InfoOverlayProps) => {
         path="/info"
       />
       <section className="max-w-4xl mx-auto pt-36 md:pt-48 px-6 md:px-10">
-        <p className="spec-label mb-4">Profile</p>
+        <p className="spec-label mb-4">{t("profile")}</p>
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-light tracking-tighter mb-12 text-foreground leading-tight">
-          <span className="block">— Swiss based designer</span>
-          <span className="block mt-4">— Currently studying at Ecal</span>
+          <span className="block">{t("swissDesigner")}</span>
+          <span className="block mt-4">{t("studyingEcal")}</span>
         </h1>
         <a
           href="https://www.instagram.com/matheodusong/"
