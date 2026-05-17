@@ -7,6 +7,11 @@ export interface ProjectData {
   description: string;
   objective?: string;
   materiality: string;
+  /** English translations */
+  subtitleEn?: string;
+  descriptionEn?: string;
+  objectiveEn?: string;
+  materialityEn?: string;
   /** Folder name under /images/ — images inside must be named image-1.jpeg, image-2.jpeg, etc. */
   imageFolder: string;
   /** Number of images in the folder (default: 3) */
@@ -28,6 +33,12 @@ export const projects: ProjectData[] = [
     objective:
       "Série de porte-mines développée comme étude de matière, explorant la manière dont un objet peut fonctionner comme un nuancier. Le motif répété le long de chaque corps s’épaissit progressivement selon le diamètre de la mine qu’il contient, transformant un détail fonctionnel en code visuel.",
     materiality: "Aluminium imprimé en 3D. 2024.",
+    subtitleEn: "Mechanical pencils",
+    descriptionEn:
+      "A series of mechanical pencils developed as a material study, exploring how an object can function as a swatch. The pattern repeated along each barrel thickens progressively according to the diameter of the lead it contains, turning a functional detail into visual code.",
+    objectiveEn:
+      "A series of mechanical pencils developed as a material study, exploring how an object can function as a swatch. The pattern repeated along each barrel thickens progressively according to the diameter of the lead it contains, turning a functional detail into visual code.",
+    materialityEn: "3D printed aluminium. 2024.",
     imageFolder: "alumine",
   },
   {
@@ -41,6 +52,13 @@ export const projects: ProjectData[] = [
       "Basé sur un système de stockage M.2 interchangeable, RPR est un SSD externe réparable qui permet de remplacer ou d’ajuster son stockage en toute simplicité, sans aucun outil. Autour du boîtier, une protection en plastique souple enveloppe le SSD. Cette couche sert non seulement à maintenir les composants en place sans recourir à des vis, mais également à protéger vos données des impacts et des chocs éventuels.",
     materiality:
       "Aluminium imprimé en 3D et bumper en plastique souple. 2025.",
+    subtitleEn: "CNC manufacturing",
+    descriptionEn:
+      "Built around an interchangeable M.2 storage system, RPR is a repairable external SSD that lets you swap or upgrade your drive effortlessly, without any tools. A soft plastic shell wraps around the casing, holding the components together without screws while protecting your data from impacts and shocks.",
+    objectiveEn:
+      "Built around an interchangeable M.2 storage system, RPR is a repairable external SSD that lets you swap or upgrade your drive effortlessly, without any tools. A soft plastic shell wraps around the casing, holding the components together without screws while protecting your data from impacts and shocks.",
+    materialityEn:
+      "3D printed aluminium and soft plastic bumper. 2025.",
     imageFolder: "rpr",
   },
   {
@@ -53,6 +71,12 @@ export const projects: ProjectData[] = [
     objective:
       "Pensé pour s’adapter à une large variété d’utilisateurs, Mille-foil répond à cette problématique grâce à un système modulaire de volume. Une seule planche suffit là où plusieurs seraient normalement nécessaires. Adaptée aussi bien aux débutants qu’aux riders expérimentés, elle accompagne l’évolution de chacun. Facile à transporter et rapide à assembler, quelques vis suffisent pour être prêt à naviguer.",
     materiality: "Carbone et fibre de verre. 2026.",
+    subtitleEn: "Structural design",
+    descriptionEn:
+      "Designed to suit a wide range of users, Mille-foil addresses this challenge through a modular volume system. A single board replaces what would normally require several. Suited to beginners and experienced riders alike, it grows with its user. Easy to transport and quick to assemble, just a few screws and you’re ready to ride.",
+    objectiveEn:
+      "Designed to suit a wide range of users, Mille-foil addresses this challenge through a modular volume system. A single board replaces what would normally require several. Suited to beginners and experienced riders alike, it grows with its user. Easy to transport and quick to assemble, just a few screws and you’re ready to ride.",
+    materialityEn: "Carbon and fibreglass. 2026.",
     imageFolder: "mille-foil",
   },
   {
@@ -66,6 +90,13 @@ export const projects: ProjectData[] = [
       "Zéphyr est un éventail métallique pensé comme une réinterprétation contemporaine d’un objet ancien, conçu pour les journées d’été. Avec structure en acier inoxydable et sa toile en ripstop thermocollé, Zéphyr devient un compagnon discret pour les journées chaudes.",
     materiality:
       "Acier inoxydable découpé au laser et ripstop. 2024.",
+    subtitleEn: "Aerodynamic study",
+    descriptionEn:
+      "Zéphyr is a metallic fan conceived as a contemporary re-reading of a centuries-old object, designed for summer days. With its stainless steel frame and heat-welded ripstop canvas, Zéphyr becomes a discreet companion for warm days.",
+    objectiveEn:
+      "Zéphyr is a metallic fan conceived as a contemporary re-reading of a centuries-old object, designed for summer days. With its stainless steel frame and heat-welded ripstop canvas, Zéphyr becomes a discreet companion for warm days.",
+    materialityEn:
+      "Laser-cut stainless steel and ripstop canvas. 2024.",
     imageFolder: "zephyr",
     imageCount: 2,
   },
@@ -80,6 +111,13 @@ export const projects: ProjectData[] = [
       "Peony est un soliflore conçu comme un coussin pour pivoines, réalisé lors d’un workshop dirigé par Philippe Malouin, en collaboration avec Arthur Németh et Jonas Meynet.",
     materiality:
       "Verre soufflé à la main. 2024. Images par Shiny Vallenas.",
+    subtitleEn: "Organic form",
+    descriptionEn:
+      "Peony is a bud vase conceived as a cushion for peonies, made during a workshop led by Philippe Malouin, in collaboration with Arthur Németh and Jonas Meynet.",
+    objectiveEn:
+      "Peony is a bud vase conceived as a cushion for peonies, made during a workshop led by Philippe Malouin, in collaboration with Arthur Németh and Jonas Meynet.",
+    materialityEn:
+      "Hand-blown glass. 2024. Images by Shiny Vallenas.",
     imageFolder: "peony",
   },
   {
@@ -93,6 +131,13 @@ export const projects: ProjectData[] = [
       "Une collection de bijoux composée de bagues, bracelets et boucles de ceinture créée pour accompagner les silhouettes de la créatrice de mode Venusz.e lors de son défilé. Chaque pièce est imprimée en 3D en acier inoxydable 316L, certaines sont polies à la main.",
     materiality:
       "Acier inoxydable 316L imprimé en 3D, poli à la main. Projet personnel, 2026.",
+    subtitleEn: "Jewellery collection",
+    descriptionEn:
+      "A jewellery collection of rings, bracelets and belt buckles created to accompany the silhouettes of fashion designer Venusz.e during her runway show. Each piece is 3D printed in 316L stainless steel, some hand-polished.",
+    objectiveEn:
+      "A jewellery collection of rings, bracelets and belt buckles created to accompany the silhouettes of fashion designer Venusz.e during her runway show. Each piece is 3D printed in 316L stainless steel, some hand-polished.",
+    materialityEn:
+      "3D printed 316L stainless steel, hand-polished. Personal project, 2026.",
     imageFolder: "Runway",
   },
   {
@@ -106,6 +151,11 @@ export const projects: ProjectData[] = [
       "Client privé.",
     materiality:
       "CGI modélisé avec Rhino et rendu sur Blender. 2025.",
+    subtitleEn: "Visual research",
+    descriptionEn: "Private client.",
+    objectiveEn: "Private client.",
+    materialityEn:
+      "CGI modelled in Rhino and rendered in Blender. 2025.",
     imageFolder: "PN",
   },
   {
@@ -119,6 +169,11 @@ export const projects: ProjectData[] = [
       "Client privé.",
     materiality:
       "CGI modélisé sur Rhino et rendu sur Blender. 2025-2026.",
+    subtitleEn: "Visuals for a client",
+    descriptionEn: "Private client.",
+    objectiveEn: "Private client.",
+    materialityEn:
+      "CGI modelled in Rhino and rendered in Blender. 2025-2026.",
     imageFolder: "JB",
     imageCount: 2,
   },
