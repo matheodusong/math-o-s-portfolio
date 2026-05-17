@@ -5,6 +5,7 @@ import OverlayPage from "./OverlayPage";
 import SEOHead from "./SEOHead";
 import { getProjectImage } from "@/data/projects";
 import type { ProjectData } from "@/data/projects";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface ProjectDetailProps {
   project: ProjectData | null;
@@ -13,6 +14,7 @@ interface ProjectDetailProps {
 }
 
 const ProjectDetail = ({ project, isOpen, onClose }: ProjectDetailProps) => {
+  const { lang } = useLanguage();
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const count = project?.imageCount ?? 3;
 
@@ -35,16 +37,21 @@ const ProjectDetail = ({ project, isOpen, onClose }: ProjectDetailProps) => {
 
   if (!project) return null;
 
+  const subtitle = lang === "en" ? project.subtitleEn ?? project.subtitle : project.subtitle;
+  const description = lang === "en" ? project.descriptionEn ?? project.description : project.description;
+  const objective = lang === "en" ? project.objectiveEn ?? project.objective ?? project.description : project.objective ?? project.description;
+  const materiality = lang === "en" ? project.materialityEn ?? project.materiality : project.materiality;
+
   const images = Array.from({ length: count }, (_, i) => ({
     src: getProjectImage(project.imageFolder, i + 1),
-    alt: i === 0 ? `${project.title} — ${project.subtitle} by Matheo Dusong` : `${project.title} detail view ${i}`,
+    alt: i === 0 ? `${project.title} — ${subtitle} by Matheo Dusong` : `${project.title} detail view ${i}`,
   }));
 
   return (
     <OverlayPage isOpen={isOpen} onClose={onClose}>
       <SEOHead
-        title={`${project.title} — ${project.subtitle}`}
-        description={project.description}
+        title={`${project.title} — ${subtitle}`}
+        description={description}
         path={`/project/${project.slug}`}
         type="article"
         image={images[0].src}
@@ -76,8 +83,8 @@ const ProjectDetail = ({ project, isOpen, onClose }: ProjectDetailProps) => {
               {project.title}
             </h1>
             <div className="text-secondary-foreground text-sm leading-relaxed space-y-6 mt-6">
-              <p className="my-[10px]">— {project.objective}</p>
-              <p>— {project.materiality}</p>
+              <p className="my-[10px]">— {objective}</p>
+              <p>— {materiality}</p>
             </div>
           </aside>
         </div>
