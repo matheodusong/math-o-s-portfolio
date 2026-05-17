@@ -1,5 +1,6 @@
 import OverlayPage from "./OverlayPage";
 import SEOHead from "./SEOHead";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface InquiriesOverlayProps {
   isOpen: boolean;
@@ -7,6 +8,7 @@ interface InquiriesOverlayProps {
 }
 
 const InquiriesOverlay = ({ isOpen, onClose }: InquiriesOverlayProps) => {
+  const { t } = useLanguage();
   return (
     <OverlayPage isOpen={isOpen} onClose={onClose}>
       <SEOHead
@@ -15,7 +17,7 @@ const InquiriesOverlay = ({ isOpen, onClose }: InquiriesOverlayProps) => {
         path="/contact"
       />
       <section className="max-w-4xl mx-auto pt-36 md:pt-48 px-6 md:px-10 text-center">
-        <p className="spec-label mb-4">Contact</p>
+        <p className="spec-label mb-4">{t("contact")}</p>
         <h1 className="text-3xl md:text-4xl lg:text-6xl font-light tracking-tighter mb-20 text-foreground">
           <a
             href="mailto:dusong.matheo@gmail.com"
