@@ -1,3 +1,5 @@
+import { useLanguage } from "@/contexts/LanguageContext";
+
 interface PortfolioHeaderProps {
   onOpenInfo: () => void;
   onOpenInquiries: () => void;
@@ -5,6 +7,7 @@ interface PortfolioHeaderProps {
 }
 
 const PortfolioHeader = ({ onOpenInfo, onOpenInquiries, onLogoClick }: PortfolioHeaderProps) => {
+  const { lang, setLang, t } = useLanguage();
   return (
     <header className="fixed top-0 left-0 w-full px-5 py-6 md:px-8 md:py-8 z-[2500] flex justify-between pointer-events-none">
       <div className="pointer-events-auto cursor-pointer" onClick={onLogoClick}>
@@ -13,8 +16,15 @@ const PortfolioHeader = ({ onOpenInfo, onOpenInquiries, onLogoClick }: Portfolio
         </span>
       </div>
       <nav className="pointer-events-auto flex gap-6 md:gap-8">
-        <button onClick={onOpenInquiries} className="nav-link">Inquiries</button>
-        <button onClick={onOpenInfo} className="nav-link">Info</button>
+        <button onClick={onOpenInquiries} className="nav-link">{t("inquiries")}</button>
+        <button onClick={onOpenInfo} className="nav-link">{t("info")}</button>
+        <button
+          onClick={() => setLang(lang === "fr" ? "en" : "fr")}
+          className="nav-link"
+          aria-label="Toggle language"
+        >
+          {lang === "fr" ? "EN" : "FR"}
+        </button>
       </nav>
     </header>
   );
