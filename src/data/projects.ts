@@ -98,7 +98,7 @@ export const projects: ProjectData[] = [
     materialityEn:
       "Laser-cut stainless steel and ripstop canvas. 2024.",
     imageFolder: "zephyr",
-    imageCount: 2,
+    imageCount: 3,
   },
   {
     slug: "peony",
