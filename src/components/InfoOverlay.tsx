@@ -24,7 +24,14 @@ const InfoOverlay = ({ isOpen, onClose }: InfoOverlayProps) => {
         </h1>
         <div className="flex flex-row items-start justify-between w-full gap-6">
           <a
-            href="mailto:dusong.matheo@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=matheo.dusong@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => {
+              e.stopPropagation();
+              e.preventDefault();
+              window.open("https://mail.google.com/mail/?view=cm&fs=1&to=matheo.dusong@gmail.com", "_blank", "noopener,noreferrer");
+            }}
             className="spec-label inline-block border-b border-foreground/40 pb-1 hover:border-foreground transition-colors"
           >
             matheo.dusong@gmail.com ↗
