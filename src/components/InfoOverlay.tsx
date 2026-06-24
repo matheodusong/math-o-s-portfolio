@@ -20,8 +20,15 @@ const InfoOverlay = ({ isOpen, onClose }: InfoOverlayProps) => {
         <p className="spec-label mb-4">{t("profile")}</p>
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-light tracking-tighter mb-12 text-foreground leading-tight">
           <span className="block">{t("swissDesigner")}</span>
-          <span className="block mt-4">{t("studyingEcal")}</span>
         </h1>
+        <div className="mb-12">
+          <p className="spec-label mb-4">{t("formation")}</p>
+          <ul className="text-xl md:text-2xl lg:text-3xl font-light tracking-tighter text-foreground leading-tight space-y-2">
+            <li>— IBCP Lisbon</li>
+            <li>— ACA Neuchâtel</li>
+            <li>— Bachelor design industriel, ECAL</li>
+          </ul>
+        </div>
         <div className="flex flex-row items-start justify-between w-full gap-6">
           <a
             href="https://mail.google.com/mail/?view=cm&fs=1&to=matheo.dusong@gmail.com"
