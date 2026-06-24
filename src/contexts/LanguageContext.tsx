@@ -5,8 +5,7 @@ export type Lang = "fr" | "en";
 type Dict = Record<string, { fr: string; en: string }>;
 
 const dict: Dict = {
-  inquiries: { fr: "Demandes", en: "Inquiries" },
-  info: { fr: "Info", en: "Info" },
+  info: { fr: "Info / Contact", en: "Info / Contact" },
   profile: { fr: "Profil", en: "Profile" },
   swissDesigner: { fr: "— Designer basé en Suisse", en: "— Swiss based designer" },
   studyingEcal: { fr: "— Actuellement étudiant à l'ECAL", en: "— Currently studying at ECAL" },

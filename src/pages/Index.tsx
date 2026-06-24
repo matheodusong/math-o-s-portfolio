@@ -5,7 +5,6 @@ import PortfolioHeader from "@/components/PortfolioHeader";
 import ProjectStrip from "@/components/ProjectStrip";
 import ProjectDetail from "@/components/ProjectDetail";
 import InfoOverlay from "@/components/InfoOverlay";
-import InquiriesOverlay from "@/components/InquiriesOverlay";
 import SEOHead from "@/components/SEOHead";
 import JsonLd from "@/components/JsonLd";
 import { projects, getProjectBySlug, getProjectImage, type ProjectData } from "@/data/projects";
@@ -18,10 +17,9 @@ const Index = () => {
   const [activeProject, setActiveProject] = useState<ProjectData | null>(null);
   const [showDetail, setShowDetail] = useState(false);
   const [showInfo, setShowInfo] = useState(false);
-  const [showInquiries, setShowInquiries] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  const hasOverlay = showDetail || showInfo || showInquiries;
+  const hasOverlay = showDetail || showInfo;
 
   // Sync route → overlay state
   useEffect(() => {
@@ -31,20 +29,13 @@ const Index = () => {
         setActiveProject(project);
         setShowDetail(true);
         setShowInfo(false);
-        setShowInquiries(false);
       }
     } else if (location.pathname === "/info") {
       setShowInfo(true);
       setShowDetail(false);
-      setShowInquiries(false);
-    } else if (location.pathname === "/contact") {
-      setShowInquiries(true);
-      setShowDetail(false);
-      setShowInfo(false);
     } else if (location.pathname === "/") {
       setShowDetail(false);
       setShowInfo(false);
-      setShowInquiries(false);
     }
   }, [slug, location.pathname]);
 
@@ -63,10 +54,6 @@ const Index = () => {
     navigate("/info");
   }, [navigate]);
 
-  const openInquiries = useCallback(() => {
-    navigate("/contact");
-  }, [navigate]);
-
   return (
     <main className="h-screen w-screen overflow-hidden">
       <SEOHead />
@@ -74,7 +61,6 @@ const Index = () => {
 
       <PortfolioHeader
         onOpenInfo={openInfo}
-        onOpenInquiries={openInquiries}
         onLogoClick={closeAll}
       />
 
@@ -112,7 +98,6 @@ const Index = () => {
         onClose={closeAll}
       />
       <InfoOverlay isOpen={showInfo} onClose={closeAll} />
-      <InquiriesOverlay isOpen={showInquiries} onClose={closeAll} />
     </main>
   );
 };

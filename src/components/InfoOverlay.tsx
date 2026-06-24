@@ -12,8 +12,8 @@ const InfoOverlay = ({ isOpen, onClose }: InfoOverlayProps) => {
   return (
     <OverlayPage isOpen={isOpen} onClose={onClose}>
       <SEOHead
-        title="About"
-        description="Swiss based designer"
+        title="Info / Contact"
+        description="Swiss based designer — get in touch with Matheo Dusong."
         path="/info"
       />
       <section className="max-w-4xl mx-auto pt-36 md:pt-48 px-6 md:px-10">
@@ -22,14 +22,22 @@ const InfoOverlay = ({ isOpen, onClose }: InfoOverlayProps) => {
           <span className="block">{t("swissDesigner")}</span>
           <span className="block mt-4">{t("studyingEcal")}</span>
         </h1>
-        <a
-          href="https://www.instagram.com/matheodusong/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="spec-label inline-block border-b border-foreground/40 pb-1 hover:border-foreground transition-colors"
-        >
-          Instagram ↗
-        </a>
+        <div className="flex flex-col gap-4 items-start">
+          <a
+            href="mailto:dusong.matheo@gmail.com"
+            className="spec-label inline-block border-b border-foreground/40 pb-1 hover:border-foreground transition-colors"
+          >
+            matheo.dusong@gmail.com ↗
+          </a>
+          <a
+            href="https://www.instagram.com/matheodusong/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="spec-label inline-block border-b border-foreground/40 pb-1 hover:border-foreground transition-colors"
+          >
+            Instagram ↗
+          </a>
+        </div>
       </section>
     </OverlayPage>
   );
