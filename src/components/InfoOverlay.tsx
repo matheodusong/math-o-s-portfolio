@@ -24,9 +24,9 @@ const InfoOverlay = ({ isOpen, onClose }: InfoOverlayProps) => {
         <div className="mb-12">
           <p className="spec-label mb-4">{t("formation")}</p>
           <ul className="text-xl md:text-2xl lg:text-3xl font-light tracking-tighter text-foreground leading-tight space-y-2">
-            <li>— IBCP Lisbon</li>
-            <li>— ACA Neuchâtel</li>
-            <li>— Bachelor design industriel, ECAL</li>
+            <li>— IBCP, Lisbon</li>
+            <li>— Académie de meuron, Neuchâtel</li>
+            <li>— ECAL bachelor design industriel, Lausanne</li>
           </ul>
         </div>
         <div className="flex flex-row items-start justify-between w-full gap-6">
