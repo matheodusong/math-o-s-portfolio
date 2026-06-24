@@ -8,7 +8,7 @@ const dict: Dict = {
   info: { fr: "Info / Contact", en: "Info / Contact" },
   profile: { fr: "Profil", en: "Profile" },
   swissDesigner: { fr: "— Designer basé en Suisse", en: "— Swiss based designer" },
-  studyingEcal: { fr: "— Actuellement étudiant à l'ECAL", en: "— Currently studying at ECAL" },
+  formation: { fr: "Formation", en: "Education" },
   contact: { fr: "Contact", en: "Contact" },
 };
 
