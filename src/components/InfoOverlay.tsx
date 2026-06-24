@@ -22,26 +22,41 @@ const InfoOverlay = ({ isOpen, onClose }: InfoOverlayProps) => {
           <span className="block">{t("swissDesigner")}</span>
           <span className="block mt-4">{t("studyingEcal")}</span>
         </h1>
-        <div className="flex flex-row items-center justify-between w-full gap-6">
+        <div className="flex flex-row items-start justify-between w-full gap-6">
           <a
             href="mailto:dusong.matheo@gmail.com"
             className="spec-label inline-block border-b border-foreground/40 pb-1 hover:border-foreground transition-colors"
           >
             matheo.dusong@gmail.com ↗
           </a>
-          <a
-            href="https://www.instagram.com/matheodusong/"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={(e) => {
-              e.stopPropagation();
-              e.preventDefault();
-              window.open("https://www.instagram.com/matheodusong/", "_blank", "noopener,noreferrer");
-            }}
-            className="spec-label inline-block border-b border-foreground/40 pb-1 hover:border-foreground transition-colors"
-          >
-            Instagram ↗
-          </a>
+          <div className="flex flex-col items-end gap-3">
+            <a
+              href="https://www.instagram.com/matheodusong/"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => {
+                e.stopPropagation();
+                e.preventDefault();
+                window.open("https://www.instagram.com/matheodusong/", "_blank", "noopener,noreferrer");
+              }}
+              className="spec-label inline-block border-b border-foreground/40 pb-1 hover:border-foreground transition-colors"
+            >
+              Instagram ↗
+            </a>
+            <a
+              href="https://www.linkedin.com/in/math%C3%A9o-dusong-060a291b5/"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => {
+                e.stopPropagation();
+                e.preventDefault();
+                window.open("https://www.linkedin.com/in/math%C3%A9o-dusong-060a291b5/", "_blank", "noopener,noreferrer");
+              }}
+              className="spec-label inline-block border-b border-foreground/40 pb-1 hover:border-foreground transition-colors"
+            >
+              LinkedIn ↗
+            </a>
+          </div>
         </div>
       </section>
     </OverlayPage>
