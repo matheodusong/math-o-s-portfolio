@@ -112,14 +112,16 @@ export const projects: ProjectData[] = [
     objective:
       "Peony est un soliflore conçu comme un coussin pour pivoines, réalisé lors d’un workshop dirigé par Philippe Malouin, en collaboration avec Arthur Németh et Jonas Meynet.",
     materiality:
-      "Verre soufflé à la main. 2024. Images par Shiny Vallenas.",
+      "Verre soufflé à la main. 2024.",
     subtitleEn: "Organic form",
     descriptionEn:
       "Peony is a bud vase conceived as a cushion for peonies, made during a workshop led by Philippe Malouin, in collaboration with Arthur Németh and Jonas Meynet.",
     objectiveEn:
       "Peony is a bud vase conceived as a cushion for peonies, made during a workshop led by Philippe Malouin, in collaboration with Arthur Németh and Jonas Meynet.",
     materialityEn:
-      "Hand-blown glass. 2024. Images by Shiny Vallenas.",
+      "Hand-blown glass. 2024.",
+    credits: "Images par Shiny Vallenas.",
+    creditsEn: "Images by Shiny Vallenas.",
     imageFolder: "peony",
   },
   {
