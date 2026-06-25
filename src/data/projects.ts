@@ -130,14 +130,14 @@ export const projects: ProjectData[] = [
     objective:
       "Une collection de bijoux composée de bagues, bracelets et boucles de ceinture créée pour accompagner les silhouettes de la créatrice de mode Venusz.e lors de son défilé. Chaque pièce est imprimée en 3D en acier inoxydable 316L, certaines sont polies à la main.",
     materiality:
-      "Acier inoxydable 316L imprimé en 3D, poli à la main. Projet personnel, 2026.",
+      "Acier inoxydable 316L imprimé en 3D, poli à la main. Projet personnel, 2026. Photos par Lee Eggenshwiler, modèle Elouan Meynet.",
     subtitleEn: "Jewellery collection",
     descriptionEn:
       "A jewellery collection of rings, bracelets and belt buckles created to accompany the silhouettes of fashion designer Venusz.e during her runway show. Each piece is 3D printed in 316L stainless steel, some hand-polished.",
     objectiveEn:
       "A jewellery collection of rings, bracelets and belt buckles created to accompany the silhouettes of fashion designer Venusz.e during her runway show. Each piece is 3D printed in 316L stainless steel, some hand-polished.",
     materialityEn:
-      "3D printed 316L stainless steel, hand-polished. Personal project, 2026.",
+      "3D printed 316L stainless steel, hand-polished. Personal project, 2026. Photos by Lee Eggenshwiler, model Elouan Meynet.",
     imageFolder: "Runway",
   },
   {
