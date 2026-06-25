@@ -41,6 +41,7 @@ const ProjectDetail = ({ project, isOpen, onClose }: ProjectDetailProps) => {
   const description = lang === "en" ? project.descriptionEn ?? project.description : project.description;
   const objective = lang === "en" ? project.objectiveEn ?? project.objective ?? project.description : project.objective ?? project.description;
   const materiality = lang === "en" ? project.materialityEn ?? project.materiality : project.materiality;
+  const credits = lang === "en" ? project.creditsEn ?? project.credits : project.credits;
 
   const images = Array.from({ length: count }, (_, i) => ({
     src: getProjectImage(project.imageFolder, i + 1),
@@ -85,6 +86,7 @@ const ProjectDetail = ({ project, isOpen, onClose }: ProjectDetailProps) => {
             <div className="text-secondary-foreground text-sm leading-relaxed space-y-6 mt-6">
               <p className="my-[10px]">— {objective}</p>
               <p>— {materiality}</p>
+              {credits && <p>— {credits}</p>}
             </div>
           </aside>
         </div>
