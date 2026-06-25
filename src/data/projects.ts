@@ -12,6 +12,8 @@ export interface ProjectData {
   descriptionEn?: string;
   objectiveEn?: string;
   materialityEn?: string;
+  credits?: string;
+  creditsEn?: string;
   /** Folder name under /images/ — images inside must be named image-1.jpeg, image-2.jpeg, etc. */
   imageFolder: string;
   /** Number of images in the folder (default: 3) */
