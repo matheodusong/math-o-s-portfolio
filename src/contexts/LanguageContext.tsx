@@ -10,6 +10,9 @@ const dict: Dict = {
   swissDesigner: { fr: "— Designer basé en Suisse", en: "— Swiss based designer" },
   formation: { fr: "Formation", en: "Education" },
   contact: { fr: "Contact", en: "Contact" },
+  eduIbcp: { fr: "— IBCP, Lisbonne", en: "— IBCP, Lisbon" },
+  eduMeuron: { fr: "— Académie de Meuron, Neuchâtel", en: "— Académie de Meuron, Neuchâtel" },
+  eduEcal: { fr: "— ECAL bachelor design industriel, Lausanne", en: "— ECAL bachelor of industrial design, Lausanne" },
 };
 
 interface Ctx {
