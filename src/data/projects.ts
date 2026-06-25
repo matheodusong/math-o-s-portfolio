@@ -18,6 +18,8 @@ export interface ProjectData {
   imageFolder: string;
   /** Number of images in the folder (default: 3) */
   imageCount?: number;
+  /** Number of videos in the folder, named video-1.mp4, video-2.mp4, ... */
+  videoCount?: number;
 }
 
 /** Helper: returns the path for a project image by index (1-based). */
@@ -182,6 +184,7 @@ export const projects: ProjectData[] = [
       "CGI modelled in Rhino and rendered in Blender. 2025-2026.",
     imageFolder: "JB",
     imageCount: 2,
+    videoCount: 1,
   },
 ];
 

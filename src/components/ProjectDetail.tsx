@@ -48,6 +48,11 @@ const ProjectDetail = ({ project, isOpen, onClose }: ProjectDetailProps) => {
     alt: i === 0 ? `${project.title} — ${subtitle} by Matheo Dusong` : `${project.title} detail view ${i}`,
   }));
 
+  const videoCount = project.videoCount ?? 0;
+  const videos = Array.from({ length: videoCount }, (_, i) => ({
+    src: `/images/${project.imageFolder}/video-${i + 1}.mp4`,
+  }));
+
   return (
     <OverlayPage isOpen={isOpen} onClose={onClose}>
       <SEOHead
@@ -73,6 +78,21 @@ const ProjectDetail = ({ project, isOpen, onClose }: ProjectDetailProps) => {
                   className="w-full lg:w-auto lg:max-h-full lg:h-auto object-contain transition-all duration-500 hover:scale-[1.02]"
                   loading="eager"
                   decoding="async"
+                />
+              </figure>
+            ))}
+            {videos.map((v, i) => (
+              <figure
+                key={`v-${i}`}
+                className="w-full lg:w-auto lg:h-full min-w-0 flex items-center justify-center shrink"
+              >
+                <video
+                  src={v.src}
+                  className="w-full lg:w-auto lg:max-h-full lg:h-auto object-contain"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                 />
               </figure>
             ))}
