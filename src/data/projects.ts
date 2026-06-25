@@ -184,6 +184,7 @@ export const projects: ProjectData[] = [
       "CGI modelled in Rhino and rendered in Blender. 2025-2026.",
     imageFolder: "JB",
     imageCount: 2,
+    videoCount: 1,
   },
 ];
 
