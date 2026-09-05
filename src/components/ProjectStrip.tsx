@@ -1,53 +1,38 @@
-import { useState, memo } from "react";
+import { memo } from "react";
 
 interface ProjectStripProps {
-  number: number;
   title: string;
   image: string;
+  priority?: boolean;
   onClick: () => void;
+  onIntent?: () => void;
 }
 
-const ProjectStrip = memo(({ number, title, image, onClick }: ProjectStripProps) => {
-  const [isHovered, setIsHovered] = useState(false);
-
-  return (
-    <div
-      className="project-strip relative overflow-hidden cursor-grab active:cursor-grabbing border-r border-border flex items-center justify-center h-full"
-      style={{
-        width: isHovered ? "30vw" : "15vw",
-        minWidth: isHovered ? "30vw" : "15vw",
-        transition: "width 0.8s cubic-bezier(0.16, 1, 0.3, 1), min-width 0.8s cubic-bezier(0.16, 1, 0.3, 1)",
-        willChange: "width, min-width",
-      }}
-      onClick={onClick}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      <div className="absolute inset-0 flex items-center justify-center z-0">
-        <div
-          style={{
-            aspectRatio: "3/4",
-            height: "85%",
-            maxWidth: "90%",
-            overflow: "hidden",
-            transition: "transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), filter 0.8s cubic-bezier(0.16, 1, 0.3, 1)",
-            transform: isHovered ? "scale(1)" : "scale(0.95)",
-            filter: isHovered ? "blur(0px)" : "blur(6px)",
-            willChange: "transform, filter",
-          }}
-        >
-          <img
-            src={image}
-            alt={`${title} — industrial design project by Matheo Dusong`}
-            className="w-full h-full object-cover"
-            loading="eager"
-            decoding="async"
-          />
-        </div>
+const ProjectStrip = memo(({ title, image, priority = false, onClick, onIntent }: ProjectStripProps) => (
+  <button
+    type="button"
+    className="project-strip relative overflow-hidden cursor-grab active:cursor-grabbing border-r border-border flex items-center justify-center h-full"
+    onClick={onClick}
+    onMouseEnter={onIntent}
+    onFocus={onIntent}
+    aria-label={`Open ${title} project`}
+  >
+    <div className="absolute inset-0 flex items-center justify-center z-0">
+      <div className="project-strip__media">
+        <img
+          src={image}
+          alt={`${title} — industrial design project by Matheo Dusong`}
+          className="w-full h-full object-cover"
+          width={900}
+          height={1200}
+          loading={priority ? "eager" : "lazy"}
+          fetchPriority={priority ? "high" : "low"}
+          decoding="async"
+        />
       </div>
     </div>
-  );
-});
+  </button>
+));
 
 ProjectStrip.displayName = "ProjectStrip";
 

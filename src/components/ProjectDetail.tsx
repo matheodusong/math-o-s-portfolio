@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import OverlayPage from "./OverlayPage";
@@ -76,7 +76,8 @@ const ProjectDetail = ({ project, isOpen, onClose }: ProjectDetailProps) => {
                   src={img.src}
                   alt={img.alt}
                   className="w-full lg:w-auto lg:max-h-full lg:h-auto object-contain transition-all duration-500 hover:scale-[1.02]"
-                  loading="eager"
+                  loading={i === 0 ? "eager" : "lazy"}
+                  fetchPriority={i === 0 ? "high" : "auto"}
                   decoding="async"
                 />
               </figure>
@@ -93,6 +94,7 @@ const ProjectDetail = ({ project, isOpen, onClose }: ProjectDetailProps) => {
                   loop
                   muted
                   playsInline
+                  preload="metadata"
                 />
               </figure>
             ))}

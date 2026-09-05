@@ -26,6 +26,10 @@ export interface ProjectData {
 export const getProjectImage = (folder: string, index: number) =>
   `/images/${folder}/image-${index}.webp`;
 
+/** Lightweight image used by the homepage carousel. */
+export const getProjectThumbnail = (folder: string) =>
+  `/images/${folder}/thumbnail.webp`;
+
 export const projects: ProjectData[] = [
   {
     slug: "alumine",
